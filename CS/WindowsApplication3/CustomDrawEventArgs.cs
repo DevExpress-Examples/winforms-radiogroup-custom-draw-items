@@ -12,22 +12,22 @@ namespace WindowsApplication3 {
     public delegate void CustomDrawEventHandler(object sender, CustomDrawEventArgs e);
     public class CustomDrawEventArgs : EventArgs
     {
-        Graphics graphics;
+        GraphicsCache cache;
         RadioGroupItemViewInfo itemInfo;
         CheckObjectPainter checkPainter;
         bool handled;
 
-        public CustomDrawEventArgs(Graphics graphics, RadioGroupItemViewInfo itemInfo, CheckObjectPainter checkPainter, bool handled)
+        public CustomDrawEventArgs(GraphicsCache cache, RadioGroupItemViewInfo itemInfo, CheckObjectPainter checkPainter, bool handled)
         {
-            this.graphics = graphics;
+            this.cache = cache;
             this.itemInfo = itemInfo;
             this.checkPainter = checkPainter;
             this.handled = handled;
         }
 
-        public Graphics Graphics
+        public GraphicsCache Cache
         {
-            get { return graphics; }
+            get { return cache; }
         }
 
         public RadioGroupItemViewInfo ItemInfo

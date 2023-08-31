@@ -24,7 +24,7 @@ Namespace DXSample
 			For Each itemInfo As RadioGroupItemViewInfo In vi.ItemsInfo
 				itemInfo.Cache = info.Cache
 				Try
-					Dim e As New CustomDrawEventArgs(info.Graphics, itemInfo, vi.RadioPainter, False)
+					Dim e As New CustomDrawEventArgs(info.Cache, itemInfo, vi.RadioPainter, False)
 					Dim item As RepositoryItemCustomRadioGroup = TryCast(vi.Item, RepositoryItemCustomRadioGroup)
 					item.RaiseCustomDrawItem(e)
 					If (Not e.Handled) Then

@@ -13,21 +13,21 @@ Namespace WindowsApplication3
 	Public Delegate Sub CustomDrawEventHandler(ByVal sender As Object, ByVal e As CustomDrawEventArgs)
 	Public Class CustomDrawEventArgs
 		Inherits EventArgs
-		Private graphics_Renamed As Graphics
+		Private cache_Renamed As GraphicsCache
 		Private itemInfo_Renamed As RadioGroupItemViewInfo
 		Private checkPainter_Renamed As CheckObjectPainter
 		Private handled_Renamed As Boolean
 
-		Public Sub New(ByVal graphics As Graphics, ByVal itemInfo As RadioGroupItemViewInfo, ByVal checkPainter As CheckObjectPainter, ByVal handled As Boolean)
-			Me.graphics_Renamed = graphics
+		Public Sub New(ByVal cache As GraphicsCache, ByVal itemInfo As RadioGroupItemViewInfo, ByVal checkPainter As CheckObjectPainter, ByVal handled As Boolean)
+			Me.cache_Renamed = cache
 			Me.itemInfo_Renamed = itemInfo
 			Me.checkPainter_Renamed = checkPainter
 			Me.handled_Renamed = handled
 		End Sub
 
-		Public ReadOnly Property Graphics() As Graphics
+		Public ReadOnly Property Cache() As GraphicsCache
 			Get
-				Return graphics_Renamed
+				Return cache_Renamed
 			End Get
 		End Property
 

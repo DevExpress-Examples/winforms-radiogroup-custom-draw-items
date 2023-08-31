@@ -25,7 +25,7 @@ namespace DXSample
                 itemInfo.Cache = info.Cache;
                 try
                 {
-                    CustomDrawEventArgs e = new CustomDrawEventArgs(info.Graphics, itemInfo, vi.RadioPainter, false);
+                    CustomDrawEventArgs e = new CustomDrawEventArgs(info.Cache, itemInfo, vi.RadioPainter, false);
                     RepositoryItemCustomRadioGroup item = vi.Item as RepositoryItemCustomRadioGroup;
                     item.RaiseCustomDrawItem(e);
                     if (!e.Handled)

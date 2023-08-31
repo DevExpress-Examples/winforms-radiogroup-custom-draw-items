@@ -24,7 +24,7 @@ namespace WindowsApplication3 {
             if (e.ItemInfo.State == DevExpress.Utils.Drawing.ObjectState.Hot)
             {
                 LinearGradientBrush brush = new LinearGradientBrush(e.ItemInfo.Bounds, Color.LightBlue, Color.Indigo, LinearGradientMode.ForwardDiagonal);
-                e.Graphics.FillRectangle(brush, e.ItemInfo.Bounds);
+                e.Cache.FillRectangle(brush, e.ItemInfo.Bounds);
                 e.CheckPainter.DrawObject(e.ItemInfo);
                 
                 e.Handled = true;

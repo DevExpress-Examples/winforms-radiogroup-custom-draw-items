@@ -23,7 +23,7 @@ Namespace WindowsApplication3
 			End If
 			If e.ItemInfo.State = DevExpress.Utils.Drawing.ObjectState.Hot Then
 				Dim brush As New LinearGradientBrush(e.ItemInfo.Bounds, Color.LightBlue, Color.Indigo, LinearGradientMode.ForwardDiagonal)
-				e.Graphics.FillRectangle(brush, e.ItemInfo.Bounds)
+				e.Cache.FillRectangle(brush, e.ItemInfo.Bounds)
 				e.CheckPainter.DrawObject(e.ItemInfo)
 
 				e.Handled = True
