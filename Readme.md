@@ -25,6 +25,17 @@ void OnCustomDrawItem(object sender, CustomDrawEventArgs e) {
 }
 ```
 
+> **Note**
+>
+> You can also use the following pre-designed and ready-to-use group controls shipped as part of [DevExpress WinForms UI Templates](https://docs.devexpress.com/WindowsForms/404061/ui-templates):
+>
+> * [Chip Group](https://docs.devexpress.com/WindowsForms/404075/ui-templates/groups/chip-group)
+> * [Multi-Select Chip Group](https://docs.devexpress.com/WindowsForms/404074/ui-templates/groups/multi-select-chip-group)
+> * [Radio Button Group](https://docs.devexpress.com/WindowsForms/404073/ui-templates/groups/radio-button-group)
+> * [Toggle Button Group](https://docs.devexpress.com/WindowsForms/404072/ui-templates/groups/toggle-button-group)
+>
+>  DevExpress WinForms UI Templates﻿ include predesigned and ready-to-use UI components and forms (C# and Visual Studio 2022 only).
+
 
 ## Files to Review
 
