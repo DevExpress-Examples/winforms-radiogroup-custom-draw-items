@@ -9,7 +9,7 @@
 
 This example creates a custom radio group control that allows you to manually paint radio items:
 
-![](https://raw.githubusercontent.com/DevExpress-Examples/how-to-custom-draw-radiogroupitem-e3371/13.1.4%2B/media/winforms-custom-radio-group.png)
+![WinForms Radio Group - Custom draw radio items](media/winforms-custom-radio-group.png)
 
 ```csharp
 void OnCustomDrawItem(object sender, CustomDrawEventArgs e) {
@@ -58,3 +58,4 @@ void OnCustomDrawItem(object sender, CustomDrawEventArgs e) {
 
 (you will be redirected to DevExpress.com to submit your response)
 <!-- feedback end -->
+
